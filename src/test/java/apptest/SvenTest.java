@@ -24,7 +24,7 @@ public class GeneratedTest {
 
     @Test
     public void generatedMethod() {
-        driver.findElementByXPath("//*[@text='SeeTestDemoApp']").click();
+        driver.executeScript("seetest:client.launch", "com.experitest.ExperiBank/.LoginActivity", false, false);
         driver.findElementByXPath("//*[@id='usernameTextField']").sendKeys("company");
         driver.findElementByXPath("//*[@id='passwordTextField']").sendKeys("company");
         driver.findElementByXPath("//*[@text='Login']").click();
